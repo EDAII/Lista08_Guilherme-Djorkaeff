@@ -4,7 +4,7 @@ rng('shuffle')
 s = randi([1,15],1,15);
 rng('shuffle')
 t = randi([1,15],1,15);
-weights = randi([1,10],1,13); %Arestas
+weights = randi([1,10],1,15); %Arestas
 G = digraph(s,t, weights);
 p = plot(G,'EdgeLabel',G.Edges.Weight);
 partida = input('Digite o nó de partida: ');
